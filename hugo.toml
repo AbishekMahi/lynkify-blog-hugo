@@ -1,0 +1,30 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'Lynkify Blog'
+
+[[menu.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
+
+[[menu.main]]
+name = 'Posts'
+pageRef = '/posts'
+weight = 20
+
+[[menu.main]]
+name = 'Tags'
+pageRef = '/tags'
+weight = 30
+
+[taxonomies]
+tag = "tags"
+author = "authors"
+category = "categories"
+
+# paginate = 5
+
+[module]
+[module.hugoVersion]
+extended = false
+min = "0.116.0"

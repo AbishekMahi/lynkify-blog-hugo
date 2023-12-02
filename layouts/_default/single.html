@@ -1,0 +1,119 @@
+{{ define "main" }}
+<style>
+  .header-transparent {
+    position: absolute;
+    z-index: 11;
+    left: 0;
+    right: 0;
+    background: linear-gradient(146deg, #4AAACB 0%, #6E67DF 47.92%, #C55BFE 100%) !important;
+    margin-top: 0px;
+    box-shadow: none;
+    backdrop-filter: blur(10px)
+  }
+
+  .postbox__details ul li {
+    list-style: disc !important;
+  }
+
+  .postbox__details ol li {
+    list-style: decimal !important;
+  }
+</style>
+
+
+<!-- page title area -->
+<section class="page__title-area white-bg pt-10">
+  <div class="container mt-20">
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-xxl-9 col-md-12">
+        <div class="page__title-content mb-20">
+          <div class="postbox__meta d-flex">
+
+            {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+            {{ $dateHuman := .Date | time.Format ":date_long" }}
+
+            <div class="postbox__tag-2">
+              {{ with .Params.categories }}
+              {{ range . }}
+              <a href="{{ "/categories/" | relURL }}{{ . | urlize }}">[ {{ . }} ]</a>
+              {{ end }}
+              {{ end }}
+            </div>
+            <div class="postbox__time">
+              <span>6 min read</span>
+            </div>
+          </div>
+          <h1 class="page__title">{{ .Title }}</h1>
+          <div class="postbox__author-2 mt-20">
+
+
+            <ul class="d-flex align-items-center">
+              <li>
+                <div class="postbox__author-thumb-2">
+                  <img loading="lazy" src="{{ .Params.author_url }}" alt="{{ .Params.authors }}">
+                </div>
+              </li>
+              {{ with .Params.authors }}
+              {{ range . }}
+              <li>
+                <h6><a href="{{ "/authors/" | relURL }}{{ . | urlize }}">{{ . }}</a>
+                </h6>
+                <span><a href="{{ "/authors/" | relURL }}{{ . | urlize }}">View
+                    Profile</a></span>
+              </li>
+              {{ end }}
+              {{ end }}
+              <li>
+                <h6><time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time></h6>
+                <span>Published</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="page__title-area white-bg pt-10 pb-85">
+  <div class="container mt-10">
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-xxl-9 col-md-12">
+        <div class="postbox__wrapper">
+          <div class="postbox__thumb postbox__thumb-2 fix w-img mb-30">
+            <img loading="lazy" src="/img/blog/blog-2.png" title="discover-isrc-search-by-lynkify"
+              alt="discover-isrc-search-by-lynkify">
+          </div>
+          <div class="postbox__details mb-30">
+            {{ .Content }}
+          </div>
+          {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+          <div class="postbox__share m-social mb-80">
+            <h5>Share This Information</h5>
+            <ul>
+              <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.lynkify.in{{ .RelPermalink }}"
+                  target="_blank" class="fb"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a
+                  href="https://twitter.com/intent/tweet?url=https://blog.lynkify.in{{ .RelPermalink }}&text={{ .Title }} #SmartLinks #MusicSharing #Lynkify @lynkify_in"
+                  target="_blank" class="tw"><i class="fab fa-twitter"></i></a></li>
+              <li><a
+                  href="https://www.linkedin.com/sharing/share-offsite/?url=https://blog.lynkify.in{{ .RelPermalink }}"
+                  target="_blank" class="link"><i class="fab fa-linkedin-in"></i></a></li>
+              <li>
+                <a href="whatsapp://send?text=Check out this blog post: {{ .Title }}. - https://blog.lynkify.in{{ .RelPermalink }}"
+                  data-action="share/whatsapp/share" target="_blank" class="wa">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:?subject={{ .Title }}&body=Check out this blog post: {{ .Title }} - https://blog.lynkify.in{{ .RelPermalink }}"
+                  target="_blank" class="pin">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+{{ end }}

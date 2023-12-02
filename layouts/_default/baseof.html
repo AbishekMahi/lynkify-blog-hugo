@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}"
+  dir="{{ or site.Language.LanguageDirection `ltr` }}">
+
+<head>
+  {{ partial "head.html" . }}
+</head>
+
+<body id="body">
+  {{ partial "header.html" . }}
+
+  <main>
+    {{ partial "breadcamp.html" . }}
+
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <footer>
+    {{ partial "footer.html" . }}
+  </footer>
+
+  {{ partial "script-footer.html" . }}
+
+</body>
+
+</html>
+
+{{/*  {{ define "main" }}
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>{{ .Site.Title }} </h1>
+      <h3>{{ .Params.subtitle }} </h3>
+      <p>{{ .Content }}</p>
+    </div>
+  </div>
+</div>
+
+{{ end }} */}}

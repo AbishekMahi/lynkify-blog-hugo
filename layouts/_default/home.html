@@ -1,0 +1,58 @@
+{{ define "main" }}
+<section class="d-flex justify-content-center align-items-center">
+  <div class="text-center mb-100 mt-140 p-3" style="max-width: 700px;">
+    <h1 class="text-light" style="font-size: 3rem !important;">Lynkify Blog</h1>
+    <p class="text-light">Learn More About Smart Links, Music Marketing Tips & Strategies: Everything You
+      Need to Know</p>
+    <div class=" justify-content-center align-items-center mb-3">
+      <div class="footer__subscribe-input mt-30 mb-3">
+        <form action="" method="POST" onsubmit="search()">
+          <input type="text" id="search-input" name="search" required class="form-control"
+            oninput="toggleButtonVisibility()" placeholder="Search Blogs...">
+          <button type="submit" class="m-btn"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+    <div id="search-results-container"></div>
+  </div>
+</section>
+
+<section class="trending__area pt-40 pb-110 grey-bg">
+  <div class="container mt-40">
+    <div class="postbox__recent mb-60">
+
+      <h2 class="mb-10">Recent Posts</h2>
+      <div class="row">
+
+        {{ range site.RegularPages }}
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 blog-card h-100">
+          <div class="blog__single-2 white-bg mb-30 p-0">
+            <div class="blog__thumb-2 w-img mb-20">
+              <a href="{{ .RelPermalink }}">
+                <img loading="lazy" src="{{ .Params.banner }}" alt="{{ .LinkTitle }}">
+              </a>
+            </div>
+            <div class="blog__content-2">
+              <div class="postbox__meta d-flex">
+                <div class="postbox__tag-2">
+                  <span>{{ .Params.categories }}</span>
+                </div>
+                <div class="postbox__time">
+                  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+                  {{ $dateHuman := .Date | time.Format ":date_long" }}
+                  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+                </div>
+              </div>
+              <h5 class="blog__title-2"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h5>
+              <!-- <p>Jeffrey arse over tit give us a bell old posh morish wellies cheeky.</p> -->
+              <a href="{{ .RelPermalink }}" class="link-btn"><i class="fal fa-arrow-right"></i>read more</a>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

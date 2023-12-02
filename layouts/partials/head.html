@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s - %s" .Title site.Title }}{{ end }}</title>
+
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/index.css">
+<link rel="stylesheet" href="/css/preloader.css">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/meanmenu.css">
+<link rel="stylesheet" href="/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/css/animate.min.css">
+<link rel="stylesheet" href="/css/fontAwesome5Pro.css">
+<link rel="stylesheet" href="/css/default.css">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/backToTop.css">
+{{ partialCached "head/css.html" . }}
+{{ partialCached "head/js.html" . }}
