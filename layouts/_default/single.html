@@ -35,12 +35,12 @@
             <div class="postbox__tag-2">
               {{ with .Params.categories }}
               {{ range . }}
-              <a href="{{ "/categories/" | relURL }}{{ . | urlize }}">[ {{ . }} ]</a>
+              <a href="{{ "/categories/" | relURL }}{{ . | urlize }}"> <i class="far fa-folder"></i> {{ . }} </a>
               {{ end }}
               {{ end }}
             </div>
             <div class="postbox__time">
-              <span>6 min read</span>
+              {{ partial "reading-time.html" . }}
             </div>
           </div>
           <h1 class="page__title">{{ .Title }}</h1>

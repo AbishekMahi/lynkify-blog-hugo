@@ -23,7 +23,7 @@
       <div class="row">
         {{/*  {{ $paginator := .Paginate (where .Data.Pages "Type" "posts") }} */}}
         {{/*  {{ range $paginator.Pages }} */}}
-        {{ range (.Paginator 3).Pages }}
+        {{ range (.Paginator 6).Pages }}
         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 blog-card h-100">
           <div class="blog__single-2 white-bg mb-30 p-0">
             <div class="blog__thumb-2 w-img mb-20">
@@ -58,20 +58,4 @@
   </div>
 </section>
 
-{{/*  <div class="pagination">
-  {{ if .Paginator.HasPrev }}
-<a href="{{ .Paginator.Prev.URL }}">← Newer Posts</a>
 {{ end }}
-{{ if .Paginator.HasNext }}
-<a href="{{ .Paginator.Next.URL }}">Older Posts →</a>
-{{ end }}
-</div> */}}
-
-{{ end }}
-
-
-{{/*  {{ .Content }}
-{{ range .Pages }}
-<h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-{{ .Summary }}
-{{ end }} */}}
