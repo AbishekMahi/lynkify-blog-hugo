@@ -1,8 +1,37 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Lynkify">
+<meta name="copyright" content="Lynkify">
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="canonical" href="{{ .Permalink }}" />
 
-<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s - %s" .Title site.Title }}{{ end }}</title>
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} - {{ site.Title }}{{ end }}</title>
+
+<meta name="description"
+    content="{{ with .Params.description }}{{ . | safeHTML }}{{ else }}{{ site.Params.description | default "" | safeHTML }}{{ end }}">
+<meta name="keywords"
+    content="smart links,Lynkify, free, alternative, Songwhip, Linkfire, music promotion, music marketing tips, music marketing strategies, music sharing, Lynkify Blog, music promotion, music distribution, music analytics, music branding, music industry insights">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:title"
+    content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} - {{ site.Title }}{{ end }}" />
+<meta property="og:description"
+    content="{{ with .Params.description }}{{ . | safeHTML }}{{ else }}{{ site.Params.description | default "" | safeHTML }}{{ end }}" />
+<meta property="og:image"
+    content="{{ with .Params.banner }}{{ . | safeHTML }}{{ else }}{{ site.Params.banner | default "/img/blog/blog.png" | safeHTML }}{{ end }}" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="{{ .Permalink }}" />
+<meta property="twitter:title"
+    content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} - {{ site.Title }}{{ end }}" />
+<meta property="twitter:description"
+    content="{{ with .Params.description }}{{ . | safeHTML }}{{ else }}{{ site.Params.description | default "" | safeHTML }}{{ end }}" />
+<meta property="twitter:image"
+    content="{{ with .Params.banner }}{{ . | safeHTML }}{{ else }}{{ site.Params.banner | default "/img/blog/blog.png" | safeHTML }}{{ end }}" />
 
 <link rel="stylesheet" href="/css/main.css">
 <link rel="stylesheet" href="/css/index.css">
@@ -15,5 +44,76 @@
 <link rel="stylesheet" href="/css/default.css">
 <link rel="stylesheet" href="/css/style.css">
 <link rel="stylesheet" href="/css/backToTop.css">
+
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}
+
+<!-- DNS preconnect -->
+<meta http-equiv="x-dns-prefetch-control" content="on" />
+<link rel="preconnect" href="https://use.fontawesome.com" crossorigin />
+<link rel="preconnect" href="//cdnjs.cloudflare.com" />
+<link rel="preconnect" href="//www.googletagmanager.com" />
+<link rel="preconnect" href="//www.google-analytics.com" />
+<link rel="dns-prefetch" href="https://use.fontawesome.com" />
+<link rel="dns-prefetch" href="//ajax.googleapis.com" />
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+<link rel="dns-prefetch" href="//www.googletagmanager.com" />
+<link rel="dns-prefetch" href="//www.google-analytics.com" />
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+<link rel="dns-prefetch" href="//connect.facebook.net" />
+<link rel="dns-prefetch" href="//platform.linkedin.com" />
+<link rel="dns-prefetch" href="//platform.twitter.com" />
+
+<style>
+    .pagefind-ui__results-area.svelte-e9gkc3 {
+        background-color: rgb(255, 255, 255) !important;
+        border-radius: 8px !important;
+    }
+
+    .pagefind-ui__message.svelte-e9gkc3 {
+        padding-left: 8px !important;
+    }
+
+    .pagefind-ui__result-thumb.svelte-4xnkmf.svelte-4xnkmf {
+        margin-top: 0 !important;
+        max-width: 120px !important;
+    }
+
+    .pagefind-ui__result-image {
+        display: block !important;
+        width: 7.25rem !important;
+        border-radius: 0.5rem !important;
+        height: 4.83357rem !important;
+        object-fit: cover !important;
+        margin-left: 8px !important;
+    }
+
+    .pagefind-ui__button.svelte-e9gkc3 {
+        padding: 10px !important;
+        font-size: large !important;
+        height: auto !important;
+        font-weight: 400 !important;
+        color: #ffffff !important;
+        background: #dc3545 !important;
+    }
+
+    .page-item.active .page-link {
+        background-color: #dc3545;
+        border-color: #dc3545;
+        padding: 8px 14px;
+    }
+
+    .page-item {
+        padding: 0px;
+    }
+
+    .page-link {
+        font-size: 16px;
+        color: #dc3545;
+        padding: 8px 12px;
+    }
+
+    .page-link:hover {
+        color: #dc3545;
+    }
+</style>

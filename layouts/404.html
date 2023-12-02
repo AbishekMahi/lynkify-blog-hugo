@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}"
+    dir="{{ or site.Language.LanguageDirection `ltr` }}">
+
+<head>
+    <title>404 error</title>
+
+    {{ partial "head.html" . }}
+    <style>
+        .header-transparent {
+            position: absolute;
+            z-index: 11;
+            left: 0;
+            right: 0;
+            background: linear-gradient(146deg, #4AAACB 0%, #6E67DF 47.92%, #C55BFE 100%) !important;
+            margin-top: 0px;
+            box-shadow: none;
+            backdrop-filter: blur(10px)
+        }
+    </style>
+</head>
+
+<body id="body">
+    {{ partial "header.html" . }}
+
+    <main>
+        {{ partial "breadcamp.html" . }}
+
+        <section class="trending__area pt-40 pb-110 grey-bg">
+            <div class="container mt-40">
+                <div class="postbox__recent mb-60">
+                    <center>
+                        <h1><img width="250"
+                                src="https://cdni.iconscout.com/illustration/premium/thumb/404-error-3702359-3119148.png"
+                                alt="404"> <br>
+                            Page not found</h1>
+                        <a href="/" class="link-btn" style="color:red; font-weight:400"><i
+                                class="fal fa-arrow-right"></i>Back to Home</a>
+                    </center>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        {{ partial "footer.html" . }}
+    </footer>
+
+    {{ partial "script-footer.html" . }}
+
+</body>
+
+</html>

@@ -9,34 +9,33 @@
     <lastBuildDate>Sun, 01 Jan 2023 08:30:00 -0700</lastBuildDate>
     <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>My First Post</title>
+      <link>/posts/my-first-post/</link>
+      <pubDate>Sun, 03 Dec 2023 00:56:01 +0530</pubDate>
+      <guid>/posts/my-first-post/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Discover ISRC Search by Lynkify: Find ISRC of Your Music</title>
-      <link>/posts/post-3-copy/</link>
+      <link>/posts/how-to-create-smart-links-copy/</link>
       <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
-      <guid>/posts/post-3-copy/</guid>
+      <guid>/posts/how-to-create-smart-links-copy/</guid>
       <description>Introduction: For music creators, the International Standard Recording Code (ISRC) holds the key to seamless music management, royalty collection, and global recognition. With Lynkify&amp;rsquo;s revolutionary ISRC Search tool, discovering and utilizing ISRC codes has never been easier. Let&amp;rsquo;s delve into the significance of ISRC codes and how Lynkify empowers music creators to streamline their music journey.
 The Importance of ISRC Codes for Music Creators: ISRC codes act as unique fingerprints for your sound recordings.</description>
     </item>
     <item>
       <title>Discover ISRC Search by Lynkify: Find ISRC of Your Music</title>
-      <link>/posts/post-3/</link>
-      <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
-      <guid>/posts/post-3/</guid>
-      <description>Introduction: For music creators, the International Standard Recording Code (ISRC) holds the key to seamless music management, royalty collection, and global recognition. With Lynkify&amp;rsquo;s revolutionary ISRC Search tool, discovering and utilizing ISRC codes has never been easier. Let&amp;rsquo;s delve into the significance of ISRC codes and how Lynkify empowers music creators to streamline their music journey.
-The Importance of ISRC Codes for Music Creators: ISRC codes act as unique fingerprints for your sound recordings.</description>
-    </item>
-    <item>
-      <title>How To Create Smart Links For Your Music With Lynkify?</title>
       <link>/posts/how-to-create-smart-links/</link>
-      <pubDate>Wed, 15 Feb 2023 10:00:00 -0700</pubDate>
+      <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
       <guid>/posts/how-to-create-smart-links/</guid>
-      <description>Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum. Dolore voluptate occaecat qui mollit laborum ullamco et. Ipsum laboris officia anim laboris culpa eiusmod ex magna ex cupidatat anim ipsum aute. Mollit aliquip occaecat qui sunt velit ut cupidatat reprehenderit enim sunt laborum. Velit veniam in officia nulla adipisicing ut duis officia.
-Exercitation voluptate irure in irure tempor mollit Lorem nostrud ad officia.</description>
+      <description>Introduction: For music creators, the International Standard Recording Code (ISRC) holds the key to seamless music management, royalty collection, and global recognition. With Lynkify&amp;rsquo;s revolutionary ISRC Search tool, discovering and utilizing ISRC codes has never been easier. Let&amp;rsquo;s delve into the significance of ISRC codes and how Lynkify empowers music creators to streamline their music journey.
+The Importance of ISRC Codes for Music Creators: ISRC codes act as unique fingerprints for your sound recordings.</description>
     </item>
     <item>
       <title>How To Create Smart Links For Your Music With Lynkify?</title>
-      <link>/posts/post-2-copy-2/</link>
+      <link>/posts/post-2-copy/</link>
       <pubDate>Wed, 15 Feb 2023 10:00:00 -0700</pubDate>
-      <guid>/posts/post-2-copy-2/</guid>
+      <guid>/posts/post-2-copy/</guid>
       <description>Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum. Dolore voluptate occaecat qui mollit laborum ullamco et. Ipsum laboris officia anim laboris culpa eiusmod ex magna ex cupidatat anim ipsum aute. Mollit aliquip occaecat qui sunt velit ut cupidatat reprehenderit enim sunt laborum. Velit veniam in officia nulla adipisicing ut duis officia.
 Exercitation voluptate irure in irure tempor mollit Lorem nostrud ad officia.</description>
     </item>
@@ -47,6 +46,30 @@ Exercitation voluptate irure in irure tempor mollit Lorem nostrud ad officia.</d
       <guid>/posts/post-2/</guid>
       <description>Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum. Dolore voluptate occaecat qui mollit laborum ullamco et. Ipsum laboris officia anim laboris culpa eiusmod ex magna ex cupidatat anim ipsum aute. Mollit aliquip occaecat qui sunt velit ut cupidatat reprehenderit enim sunt laborum. Velit veniam in officia nulla adipisicing ut duis officia.
 Exercitation voluptate irure in irure tempor mollit Lorem nostrud ad officia.</description>
+    </item>
+    <item>
+      <title>How To Create Smart Links For Your Music With Lynkify?</title>
+      <link>/posts/post-3-copy/</link>
+      <pubDate>Wed, 15 Feb 2023 10:00:00 -0700</pubDate>
+      <guid>/posts/post-3-copy/</guid>
+      <description>Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum. Dolore voluptate occaecat qui mollit laborum ullamco et. Ipsum laboris officia anim laboris culpa eiusmod ex magna ex cupidatat anim ipsum aute. Mollit aliquip occaecat qui sunt velit ut cupidatat reprehenderit enim sunt laborum. Velit veniam in officia nulla adipisicing ut duis officia.
+Exercitation voluptate irure in irure tempor mollit Lorem nostrud ad officia.</description>
+    </item>
+    <item>
+      <title>How To Create Smart Links For Your Music With Lynkify?</title>
+      <link>/posts/post-3/</link>
+      <pubDate>Wed, 15 Feb 2023 10:00:00 -0700</pubDate>
+      <guid>/posts/post-3/</guid>
+      <description>Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum. Dolore voluptate occaecat qui mollit laborum ullamco et. Ipsum laboris officia anim laboris culpa eiusmod ex magna ex cupidatat anim ipsum aute. Mollit aliquip occaecat qui sunt velit ut cupidatat reprehenderit enim sunt laborum. Velit veniam in officia nulla adipisicing ut duis officia.
+Exercitation voluptate irure in irure tempor mollit Lorem nostrud ad officia.</description>
+    </item>
+    <item>
+      <title>Post 1</title>
+      <link>/posts/post-1-copy/</link>
+      <pubDate>Sun, 15 Jan 2023 09:00:00 -0700</pubDate>
+      <guid>/posts/post-1-copy/</guid>
+      <description>Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem. Tempor do laborum elit laboris excepteur eiusmod do. Eiusmod nisi excepteur ut amet pariatur adipisicing Lorem.
+Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in voluptate ea occaecat officia. Cillum sint esse velit ea officia minim fugiat. Elit ea esse id aliquip pariatur cupidatat id duis minim incididunt ea ea.</description>
     </item>
     <item>
       <title>Post 1</title>

@@ -6,27 +6,27 @@
     <description>Recent content in Tags on Lynkify Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Mar 2023 11:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 01 Jan 2023 08:00:00 -0700</lastBuildDate>
     <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>blue</title>
-      <link>/tags/blue/</link>
-      <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
-      <guid>/tags/blue/</guid>
+      <title>Lynkify</title>
+      <link>/tags/lynkify/</link>
+      <pubDate>Sun, 03 Dec 2023 00:56:01 +0530</pubDate>
+      <guid>/tags/lynkify/</guid>
       <description></description>
     </item>
     <item>
-      <title>green</title>
-      <link>/tags/green/</link>
+      <title>ISRC</title>
+      <link>/tags/isrc/</link>
       <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
-      <guid>/tags/green/</guid>
+      <guid>/tags/isrc/</guid>
       <description></description>
     </item>
     <item>
-      <title>red</title>
-      <link>/tags/red/</link>
+      <title>UPC</title>
+      <link>/tags/upc/</link>
       <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
-      <guid>/tags/red/</guid>
+      <guid>/tags/upc/</guid>
       <description></description>
     </item>
   </channel>

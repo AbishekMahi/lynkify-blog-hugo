@@ -22,7 +22,7 @@ tag = "tags"
 author = "authors"
 category = "categories"
 
-# paginate = 5
+# paginate = 2
 
 [module]
 [module.hugoVersion]

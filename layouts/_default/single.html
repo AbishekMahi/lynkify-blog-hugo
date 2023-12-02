@@ -50,7 +50,7 @@
             <ul class="d-flex align-items-center">
               <li>
                 <div class="postbox__author-thumb-2">
-                  <img loading="lazy" src="{{ .Params.author_url }}" alt="{{ .Params.authors }}">
+                  <img loading="lazy" src="{{ .Params.avatar }}" alt="{{ .Params.authors }}" >
                 </div>
               </li>
               {{ with .Params.authors }}
@@ -80,8 +80,9 @@
       <div class="col-xxl-9 col-md-12">
         <div class="postbox__wrapper">
           <div class="postbox__thumb postbox__thumb-2 fix w-img mb-30">
-            <img loading="lazy" src="/img/blog/blog-2.png" title="discover-isrc-search-by-lynkify"
-              alt="discover-isrc-search-by-lynkify">
+            <img src="{{ .Params.banner }}" alt="{{ .Title }}" data-pagefind-meta="image[src], image_alt[alt]" loading="lazy" >
+            {{/*  <img src="/img/blog/blog-2.png" title="discover-isrc-search-by-lynkify"
+              alt="discover-isrc-search-by-lynkify">  */}}
           </div>
           <div class="postbox__details mb-30">
             {{ .Content }}

@@ -2,15 +2,20 @@
 title = 'Home'
 date = 2023-01-01T08:00:00-07:00
 draft = false
-subtitle = 'Draft'
+tags = ['Lynkify']
+banner = '/img/blog/blog-2.png'
+categories = ['Lynkify']
+authors = ['Abishek Mahi']
+avatar = 'https://cdn-icons-png.flaticon.com/128/4140/4140048.png'
+description = 'This is the description of the blog'
 +++
 
 <!-- 1. First ordered list item
-2. Another item
+1. Another item
 ⋅⋅* Unordered sub-list. 
 1. Actual numbers don't matter, just that it's a number
 ⋅⋅1. Ordered sub-list
-4. And another item.
+1. And another item.
 
 ⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
 
