@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on Lynkify Blog</title>
-    <link>/authors/</link>
+    <link>https://blog.lynkify.in/authors/</link>
     <description>Recent content in Authors on Lynkify Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 01 Jan 2023 08:00:00 -0700</lastBuildDate>
-    <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.lynkify.in/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Abishek Mahi</title>
-      <link>/authors/abishek-mahi/</link>
+      <link>https://blog.lynkify.in/authors/abishek-mahi/</link>
       <pubDate>Sun, 01 Jan 2023 08:00:00 -0700</pubDate>
-      <guid>/authors/abishek-mahi/</guid>
+      <guid>https://blog.lynkify.in/authors/abishek-mahi/</guid>
       <description>As an independent artist and the founder of Lynkify, I&amp;rsquo;m passionate about bridging the gap between music creators and their audiences. Through my blog, I share my insights on the music industry, explore the creative process of fellow artists, and connect with music lovers from around the world. Join me on this journey of musical discovery and let&amp;rsquo;s celebrate the melodies that move us.
 Lynkify Bio - @abishekmahi </description>
     </item>

@@ -2,49 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/tags/isrc/</loc>
+    <loc>https://blog.lynkify.in/tags/isrc/</loc>
     <lastmod>2023-12-03T16:55:06+05:30</lastmod>
   </url><url>
-    <loc>/tags/lynkify/</loc>
+    <loc>https://blog.lynkify.in/tags/lynkify/</loc>
     <lastmod>2023-12-03T16:55:06+05:30</lastmod>
   </url><url>
-    <loc>/categories/lynkify/</loc>
+    <loc>https://blog.lynkify.in/categories/lynkify/</loc>
     <lastmod>2023-12-03T16:55:06+05:30</lastmod>
   </url><url>
-    <loc>/tags/upc/</loc>
+    <loc>https://blog.lynkify.in/tags/upc/</loc>
     <lastmod>2023-12-03T16:55:06+05:30</lastmod>
   </url><url>
-    <loc>/posts/upc-vs-isrc/</loc>
+    <loc>https://blog.lynkify.in/posts/upc-vs-isrc/</loc>
     <lastmod>2023-12-03T16:55:06+05:30</lastmod>
   </url><url>
-    <loc>/categories/how-to/</loc>
+    <loc>https://blog.lynkify.in/categories/how-to/</loc>
     <lastmod>2023-12-03T16:22:31+05:30</lastmod>
   </url><url>
-    <loc>/posts/find-upc-with-lynkify/</loc>
+    <loc>https://blog.lynkify.in/posts/find-upc-with-lynkify/</loc>
     <lastmod>2023-12-03T16:22:31+05:30</lastmod>
   </url><url>
-    <loc>/posts/discover-isrc-search-by-lynkify/</loc>
+    <loc>https://blog.lynkify.in/posts/discover-isrc-search-by-lynkify/</loc>
     <lastmod>2023-07-24T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>/posts/how-to-create-smart-links/</loc>
+    <loc>https://blog.lynkify.in/posts/how-to-create-smart-links/</loc>
     <lastmod>2023-07-22T00:56:01+05:30</lastmod>
   </url><url>
-    <loc>/posts/</loc>
+    <loc>https://blog.lynkify.in/posts/</loc>
     <lastmod>2023-01-01T08:30:00-07:00</lastmod>
   </url><url>
-    <loc>/authors/abishek-mahi/</loc>
+    <loc>https://blog.lynkify.in/authors/abishek-mahi/</loc>
     <lastmod>2023-01-01T08:00:00-07:00</lastmod>
   </url><url>
-    <loc>/authors/</loc>
+    <loc>https://blog.lynkify.in/authors/</loc>
     <lastmod>2023-01-01T08:00:00-07:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://blog.lynkify.in/categories/</loc>
     <lastmod>2023-01-01T08:00:00-07:00</lastmod>
   </url><url>
-    <loc>/</loc>
+    <loc>https://blog.lynkify.in/</loc>
     <lastmod>2023-01-01T08:00:00-07:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://blog.lynkify.in/tags/</loc>
     <lastmod>2023-01-01T08:00:00-07:00</lastmod>
   </url>
 </urlset>

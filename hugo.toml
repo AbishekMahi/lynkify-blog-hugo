@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = 'https://blog.lynkify.in/'
 languageCode = 'en-us'
 title = 'Lynkify Blog'
 

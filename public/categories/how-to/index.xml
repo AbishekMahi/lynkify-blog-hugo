@@ -2,34 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>How To on Lynkify Blog</title>
-    <link>/categories/how-to/</link>
+    <link>https://blog.lynkify.in/categories/how-to/</link>
     <description>Recent content in How To on Lynkify Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 03 Dec 2023 16:22:31 +0530</lastBuildDate>
-    <atom:link href="/categories/how-to/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.lynkify.in/categories/how-to/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Unleash the Power of Music with Lynkify&#39;s UPC Finder</title>
-      <link>/posts/find-upc-with-lynkify/</link>
+      <link>https://blog.lynkify.in/posts/find-upc-with-lynkify/</link>
       <pubDate>Sun, 03 Dec 2023 16:22:31 +0530</pubDate>
-      <guid>/posts/find-upc-with-lynkify/</guid>
+      <guid>https://blog.lynkify.in/posts/find-upc-with-lynkify/</guid>
       <description>Dive into a realm where music meets seamless identification. Lynkify introduces its groundbreaking UPC Finder, transcending the boundaries between physical and digital musical landscapes.
 Effortless UPC Discovery Bid farewell to the era of searching through physical packaging. Lynkify&amp;rsquo;s UPC Finder effortlessly retrieves UPCs for both physical and digital music, ensuring accurate information always rests at your fingertips.
 Elevate Your Musical Expedition Discover a profound connection with your music collection. By identifying UPCs, effortlessly locate songs on streaming platforms, monitor sales, and gain valuable insights into your musical journey.</description>
     </item>
     <item>
       <title>Discover ISRC Search by Lynkify: Find ISRC of Your Music</title>
-      <link>/posts/discover-isrc-search-by-lynkify/</link>
+      <link>https://blog.lynkify.in/posts/discover-isrc-search-by-lynkify/</link>
       <pubDate>Mon, 24 Jul 2023 11:00:00 -0700</pubDate>
-      <guid>/posts/discover-isrc-search-by-lynkify/</guid>
+      <guid>https://blog.lynkify.in/posts/discover-isrc-search-by-lynkify/</guid>
       <description>Introduction: For music creators, the International Standard Recording Code (ISRC) holds the key to seamless music management, royalty collection, and global recognition. With Lynkify&amp;rsquo;s revolutionary ISRC Search tool, discovering and utilizing ISRC codes has never been easier. Let&amp;rsquo;s delve into the significance of ISRC codes and how Lynkify empowers music creators to streamline their music journey.
 The Importance of ISRC Codes for Music Creators: ISRC codes act as unique fingerprints for your sound recordings.</description>
     </item>
     <item>
       <title>How To Create Smart Links For You Music With Lynkify?</title>
-      <link>/posts/how-to-create-smart-links/</link>
+      <link>https://blog.lynkify.in/posts/how-to-create-smart-links/</link>
       <pubDate>Sat, 22 Jul 2023 00:56:01 +0530</pubDate>
-      <guid>/posts/how-to-create-smart-links/</guid>
+      <guid>https://blog.lynkify.in/posts/how-to-create-smart-links/</guid>
       <description>Are you an aspiring music artist or content creator looking to elevate your music sharing experience? Smart links are the game-changing solution you&amp;rsquo;ve been waiting for! With Lynkify, you can effortlessly create personalized song links that resonate with your audience across various streaming platforms like Spotify, Apple Music, and more.
 What Are Smart Links For Music? Smart links, also known as dynamic or intelligent links, are versatile URLs that redirect users to different music platforms based on their preferences.</description>
     </item>
