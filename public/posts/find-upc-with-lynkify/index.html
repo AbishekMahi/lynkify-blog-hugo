@@ -154,7 +154,7 @@
 <link rel="dns-prefetch" href="//connect.facebook.net" />
 <link rel="dns-prefetch" href="//platform.linkedin.com" />
 <link rel="dns-prefetch" href="//platform.twitter.com" />
-
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
 <style>
     .pagefind-ui__results-area.svelte-e9gkc3 {
         background-color: rgb(255, 255, 255) !important;
@@ -667,6 +667,15 @@
   </footer>
 
   
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({
+            element: "#search",
+            showSubResults: true
+        });
+    });
+</script>
+
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <script src="/js/vendor/jquery-3.5.1.min.js"></script>
 <script src="/js/vendor/waypoints.min.js"></script>
@@ -684,6 +693,7 @@
 <script src="/js/imagesloaded.pkgd.min.js"></script>
 <script src="/js/main.js"></script>
 <script src="/main.js"></script>
+<script src="/pagefind/pagefind-ui.js"></script>
 
 </body>
 
