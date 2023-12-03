@@ -2,12 +2,8 @@
 title = 'Home'
 date = 2023-01-01T08:00:00-07:00
 draft = false
-tags = ['Lynkify']
-banner = '/img/blog/blog-2.png'
-categories = ['Lynkify']
-authors = ['Abishek Mahi']
-avatar = 'https://cdn-icons-png.flaticon.com/128/4140/4140048.png'
-description = 'This is the description of the blog'
+banner = '/img/blog/blog.png'
+description = "Explore the Lynkify Blog for valuable insights into smart links, music marketing tips, and strategies. Empower your music journey with our expert guidance."
 +++
 
 <!-- 1. First ordered list item

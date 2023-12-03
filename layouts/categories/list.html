@@ -16,14 +16,14 @@
   <div class="container mt-20">
     <div class="postbox__recent mb-60">
 
-      <h2 class="mb-20" style="text-transform: capitalize;">{{ .Title }}</h2>
+      <h2 class="mb-20" style="text-transform: capitalize;"><i class="fad fa-folder-open fa-lg"></i> {{ .Title }}</h2>
 
       <div class="row mb-20">
         <div class=" d-flex" style="flex-direction: row;">
           {{ range $.Site.Taxonomies.categories.ByCount}}
           <div class="">
           <a href="/categories/{{ .Name }}" class="m-btn m-btn-border-2 cta__btn" style="text-transform:capitalize;">
-            {{ .Name }} <small>( {{.Count}} )</small></a></div>
+            <i class="fad fa-folder-open fa-lg"></i> {{ .Name }} <small>( {{.Count}} )</small></a></div>
           {{ end }}
         </div>
       </div>
@@ -38,12 +38,12 @@
   <div class="container mt-20">
     <div class="postbox__recent mb-60">
 
-      <h2 class="mb-20" style="text-transform: capitalize;">{{ .Title }}</h2>
+      <h2 class="mb-20" style="text-transform: capitalize;"><i class="fad fa-folder-open fa-lg"></i> {{ .Title }}</h2>
       <div class="mb-20">
         {{ .Content }}
       </div>
       <div class="row">
-        {{ range (.Paginator 3).Pages }}
+        {{ range (.Paginator 9).Pages }}
         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 blog-card h-100">
           <div class="blog__single-2 white-bg mb-30 p-0">
             <div class="blog__thumb-2 w-img mb-20">
@@ -54,8 +54,11 @@
             <div class="blog__content-2">
               <div class="postbox__meta d-flex">
                 <div class="postbox__tag-2">
-                  <span>{{ .Params.categories }}</span>
-                </div>
+                  <span>{{ with .Params.categories }}
+                    {{ range . }}
+                    <a href="{{ "/categories/" | relURL }}{{ . | urlize }}"> <i class="fad fa-folder-open fa-lg"></i>  {{ . }} </a>
+                    {{ end }}
+                    {{ end }}</span>                </div>
                 <div class="postbox__time">
                   {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
                   {{ $dateHuman := .Date | time.Format ":date_long" }}

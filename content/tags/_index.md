@@ -2,15 +2,11 @@
 title = 'Tags'
 date = 2023-01-01T08:00:00-07:00
 draft = false
+description = "Unleash your passion for music with Lynkify's blog tags. Explore a curated selection of articles focused on specific musical themes, genres, and artists, leading you to new discoveries and enriching your musical experience."
+banner = "/img/blog/blog.png"
 +++
 
-⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
+#### Uncover Hidden Gems with Lynkify's Blog Tags
 
-⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
-⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
-⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
-
-* Unordered list can use asterisks
-- Or minuses
-+ Or pluses
+Embark on a journey of musical exploration with Lynkify's blog tags. Our tags provide a curated selection of articles that delve into specific musical themes, genres, and artists, allowing you to discover hidden gems and expand your musical horizons.
 

@@ -18,6 +18,31 @@
   .postbox__details ol li {
     list-style: decimal !important;
   }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  th,
+  td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  figure,
+  figcaption p {
+    text-align: center !important;
+    margin: 20px auto;
+    font-size: small !important;
+  }
 </style>
 
 
@@ -27,15 +52,15 @@
     <div class="row d-flex justify-content-center align-items-center">
       <div class="col-xxl-9 col-md-12">
         <div class="page__title-content mb-20">
-          <div class="postbox__meta d-flex">
+          <div class="postbox__meta d-flex mb-10">
 
             {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
             {{ $dateHuman := .Date | time.Format ":date_long" }}
 
-            <div class="postbox__tag-2">
+            <div class="postbox__tag-2 mr-10">
               {{ with .Params.categories }}
               {{ range . }}
-              <a href="{{ "/categories/" | relURL }}{{ . | urlize }}"> <i class="far fa-folder"></i> {{ . }} </a>
+              <a href="{{ "/categories/" | relURL }}{{ . | urlize }}"> <i class="fad fa-folder-open fa-lg"></i>  {{ . }} </a>
               {{ end }}
               {{ end }}
             </div>
@@ -45,18 +70,16 @@
           </div>
           <h1 class="page__title">{{ .Title }}</h1>
           <div class="postbox__author-2 mt-20">
-
-
             <ul class="d-flex align-items-center">
               <li>
                 <div class="postbox__author-thumb-2">
-                  <img loading="lazy" src="{{ .Params.avatar }}" alt="{{ .Params.authors }}" >
+                  <img loading="lazy" src="{{ .Params.avatar }}" alt="{{ .Params.authors }}">
                 </div>
               </li>
               {{ with .Params.authors }}
               {{ range . }}
               <li>
-                <h6><a href="{{ "/authors/" | relURL }}{{ . | urlize }}">{{ . }}</a>
+                <h6 style="text-align:left"><a href="{{ "/authors/" | relURL }}{{ . | urlize }}">{{ . }}</a>
                 </h6>
                 <span><a href="{{ "/authors/" | relURL }}{{ . | urlize }}">View
                     Profile</a></span>
@@ -64,7 +87,7 @@
               {{ end }}
               {{ end }}
               <li>
-                <h6><time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time></h6>
+                <h6 style="text-align:left"><time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time></h6>
                 <span>Published</span>
               </li>
             </ul>
@@ -80,16 +103,15 @@
       <div class="col-xxl-9 col-md-12">
         <div class="postbox__wrapper">
           <div class="postbox__thumb postbox__thumb-2 fix w-img mb-30">
-            <img src="{{ .Params.banner }}" alt="{{ .Title }}" data-pagefind-meta="image[src], image_alt[alt]" loading="lazy" >
-            {{/*  <img src="/img/blog/blog-2.png" title="discover-isrc-search-by-lynkify"
-              alt="discover-isrc-search-by-lynkify">  */}}
+            <img src="{{ .Params.banner }}" alt="{{ .Title }}" data-pagefind-meta="image[src], image_alt[alt]"
+              loading="lazy">
           </div>
           <div class="postbox__details mb-30">
             {{ .Content }}
           </div>
           {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
-          <div class="postbox__share m-social mb-80">
-            <h5>Share This Information</h5>
+          <div class="postbox__share m-social mb-30">
+            <h4 style="text-align:left">Share This Information:</h4>
             <ul>
               <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.lynkify.in{{ .RelPermalink }}"
                   target="_blank" class="fb"><i class="fab fa-facebook-f"></i></a></li>
@@ -108,13 +130,33 @@
               <li>
                 <a href="mailto:?subject={{ .Title }}&body=Check out this blog post: {{ .Title }} - https://blog.lynkify.in{{ .RelPermalink }}"
                   target="_blank" class="pin">
-                  <i class="fas fa-envelope"></i>
+                  <i class="far fa-envelope"></i>
                 </a>
               </li>
             </ul>
+          </div>
+          <div class="d-flex justify-content-between prenext">
+
+            <div class="m-2">
+              {{ if .PrevPage }}
+              <a class="previous-post card" href="{{ .PrevPage.Permalink }}">
+                <h5><i class="fas fa-arrow-alt-left"></i> Previous Post</h5>
+                <p class="m-0">{{ .PrevPage.Title | truncate 55 "..."}}</p>
+              </a>
+              {{ end }}
+            </div>
+            <div class="m-2">
+              {{ if .NextPage }}
+              <a class="next-post card" href="{{ .NextPage.Permalink }}">
+                <h5>Next Post <i class="fas fa-arrow-alt-right"></i></h5>
+                <p class="m-0">{{ .NextPage.Title | truncate 55 "..." }}</p>
+              </a>
+              {{ end }}
+            </div>
           </div>
         </div>
       </div>
     </div>
 </section>
+
 {{ end }}

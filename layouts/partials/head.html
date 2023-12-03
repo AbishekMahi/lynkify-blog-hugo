@@ -1,10 +1,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="index, follow">
-<meta name="author" content="Lynkify">
+<meta name="author" content="Abishek Mahi">
 <meta name="copyright" content="Lynkify">
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="canonical" href="{{ .Permalink }}" />
+
 
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} - {{ site.Title }}{{ end }}</title>
 
@@ -44,6 +45,106 @@
 <link rel="stylesheet" href="/css/default.css">
 <link rel="stylesheet" href="/css/style.css">
 <link rel="stylesheet" href="/css/backToTop.css">
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org/",
+        "@type": "Organization",
+        "name": "Lynkify",
+        "logo": "https://lynkify.in/favicon.png",
+        "url": "https://lynkify.in/",
+        "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Tamil Nadu",
+            "addressCountry": "India"
+        },
+        "sameAs": ["https://www.facebook.com/Lynkify/", "https://www.instagram.com/lynkify.in/",
+            "https://www.linkedin.com/company/lynkify", "https://twitter.com/lynkify_in"
+        ]
+    }
+</script>
+
+{{ if .IsHome }}
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org/",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Lynkify - Generate Song Links",
+                "item": "https://lynkify.in/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Lynkify Blogs - Learn About Smart Links and Music Marketing.",
+                "item": "{{ .Permalink }}"
+            }
+        ]
+    }
+</script>
+{{ else }}
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {{- $counter := 1 }}
+        {{- range .Ancestors.Reverse }}
+          {
+            "@type": "ListItem",
+            "position": {{ $counter }},
+            "name": "{{ .Title }}",
+            "item": "{{ .Permalink }}"
+          },
+          {{- $counter = add $counter 1 }}
+        {{- end }}
+        {
+          "@type": "ListItem",
+          "position": {{ $counter }},
+          "name": "{{ .Title }}",
+          "item": "{{ .Permalink }}"
+        }
+      ]
+    }
+  </script>
+{{ end }}
+
+{{ if not .IsHome }}
+{{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+{{ $dateHuman := .Date | time.Format ":date_long" }}
+{{ $date := .Date | time.Format "2006-01-02" }}
+
+<meta property="article:published_time" content="{{ $dateMachine }}">
+{{/*  <meta property="article:modified_time" content="2023-07-28T19:49:00.000+05:30">  */}}
+<script type="application/ld+json">
+    {
+      "@context": "http://schema.org/",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ .Permalink }}"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "{{ with .Params.authors }}{{ range . }}{{ . }}{{ end }}{{ end }}"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Lynkify",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://lynkify.in/favicon.png"
+        }
+      },
+      "headline": "{{ .Title }}",
+      "image": "{{ with .Params.banner }}{{ . | safeHTML }}{{ else }}{{ site.Params.banner | default "/img/blog/blog.png" | safeHTML }}{{ end }}",
+      "datePublished": "{{ $date }}",
+      "dateModified": "{{ .Lastmod.Format "2006-01-02" }}"
+    }
+</script>
+{{ end }}
+
 
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}

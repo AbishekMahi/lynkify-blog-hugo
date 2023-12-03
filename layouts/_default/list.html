@@ -34,7 +34,12 @@
             <div class="blog__content-2">
               <div class="postbox__meta d-flex">
                 <div class="postbox__tag-2">
-                  <span>{{ .Params.categories }}</span>
+                  <span>{{ with .Params.categories }}
+                    {{ range . }}
+                    <a href="{{ "/categories/" | relURL }}{{ . | urlize }}"> <i class="fad fa-folder-open fa-lg"></i>  {{ . }} </a>
+                    {{ end }}
+                    {{ end }}</span>
+                  {{/*  {{ .Params.categories }} */}}
                 </div>
                 <div class="postbox__time">
                   {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}

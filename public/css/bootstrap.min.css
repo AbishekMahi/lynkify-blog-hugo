@@ -5037,7 +5037,8 @@ fieldset:disabled .btn {
 }
 
 .breadcrumb-item.active {
-    color: #6c757d
+    color: #6c757d;
+    text-align: left;
 }
 
 .pagination {

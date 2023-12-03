@@ -808,7 +808,7 @@ p {
   display: inline-block;
   width: 76px;
   height: 36px;
-  line-height: 30px;
+  line-height: 38px;
   border: 2px solid #ffffff;
   text-align: center;
   color: #ffffff;
@@ -5949,7 +5949,7 @@ div.product_new_item a {
 
 .postbox__details p {
   font-size: 16px;
-  text-align: left !important;
+  text-align: left;
 }
 
 .postbox__details p .highlight {
@@ -5999,6 +5999,33 @@ div.product_new_item a {
   transform: rotate(180deg);
 }
 
+.previous-post p,
+.previous-post h5 {
+  text-align: left !important;
+}
+
+.next-post p,
+.next-post h5 {
+  text-align: right !important;
+}
+
+.previous-post,
+.next-post {
+  min-width: 200px;
+  padding: 15px;
+  border-radius: 6px;
+  background-color: #ebebef20;
+}
+
+.next-post h5:hover,
+.previous-post h5:hover {
+  color: #d2173f !important;
+}
+
+.prenext .card:hover {
+  background-color: #ebebef80;
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .postbox__quote {
     padding-right: 30px;
@@ -6010,11 +6037,19 @@ div.product_new_item a {
   .postbox__quote {
     padding-right: 50px;
   }
+
+  .prenext {
+    flex-wrap: wrap-reverse;
+  }
 }
 
 @media (max-width: 575px) {
   .postbox__quote {
     padding: 25px;
+  }
+
+  .prenext {
+    flex-wrap: wrap-reverse;
   }
 }
 
@@ -7925,7 +7960,7 @@ div.product_new_item a {
   display: inline-block;
   width: 44px;
   height: 44px;
-  line-height: 40px;
+  line-height: 48px;
   text-align: center;
   color: #ffffff;
   -webkit-border-radius: 6px;
