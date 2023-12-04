@@ -84,49 +84,30 @@
     }
 </script>
 {{ else }}
-<script type="application/ld+json">
+  <script type="application/ld+json">
     {
-        "@context": "http://schema.org/",
-        "@type": "BreadcrumbList",
-        "itemListElement": [{
-                {
-                    -$counter: = 1
-                }
-            } {
-                {
-                    -range.Ancestors.Reverse
-                }
-            } {
-                "@type": "ListItem",
-                "position": {
-                    {
-                        $counter
-                    }
-                },
-                "name": "{{ .Title }}",
-                "item": "{{ .Permalink }}"
-            },
-            {
-                {
-                    -$counter = add $counter 1
-                }
-            } {
-                {
-                    -end
-                }
-            } {
-                "@type": "ListItem",
-                "position": {
-                    {
-                        $counter
-                    }
-                },
-                "name": "{{ .Title }}",
-                "item": "{{ .Permalink }}"
-            }
-        ]
+      "@context": "http://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {{- $counter := 1 }}
+        {{- range .Ancestors.Reverse }}
+          {
+            "@type": "ListItem",
+            "position": {{ $counter }},
+            "name": "{{ .Title }}",
+            "item": "{{ .Permalink }}"
+          },
+          {{- $counter = add $counter 1 }}
+        {{- end }}
+        {
+          "@type": "ListItem",
+          "position": {{ $counter }},
+          "name": "{{ .Title }}",
+          "item": "{{ .Permalink }}"
+        }
+      ]
     }
-</script>
+  </script>
 {{ end }}
 
 {{ if not .IsHome }}
@@ -138,30 +119,28 @@
 {{/*  <meta property="article:modified_time" content="2023-07-28T19:49:00.000+05:30">  */}}
 <script type="application/ld+json">
     {
-        "@context": "http://schema.org/",
-        "@type": "Article",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "{{ .Permalink }}"
-        },
-        "author": {
-            "@type": "Person",
-            "name": "{{ with .Params.authors }}{{ range . }}{{ . }}{{ end }}{{ end }}"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Lynkify",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://lynkify.in/favicon.png"
-            }
-        },
-        "headline": "{{ .Title }}",
-        "image": "{{ with .Params.banner }}{{ . | safeHTML }}{{ else }}{{ site.Params.banner | default " / img / blog /
-            blog.png " | safeHTML }}{{ end }}",
-        "datePublished": "{{ $date }}",
-        "dateModified": "{{ .Lastmod.Format "
-        2006 - 01 - 02 " }}"
+      "@context": "http://schema.org/",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ .Permalink }}"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "{{ with .Params.authors }}{{ range . }}{{ . }}{{ end }}{{ end }}"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Lynkify",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://lynkify.in/favicon.png"
+        }
+      },
+      "headline": "{{ .Title }}",
+      "image": "{{ with .Params.banner }}{{ . | safeHTML }}{{ else }}{{ site.Params.banner | default "/img/blog/blog.png" | safeHTML }}{{ end }}",
+      "datePublished": "{{ $date }}",
+      "dateModified": "{{ .Lastmod.Format "2006-01-02" }}"
     }
 </script>
 {{ end }}
@@ -186,6 +165,7 @@
 <link rel="dns-prefetch" href="//platform.linkedin.com" />
 <link rel="dns-prefetch" href="//platform.twitter.com" />
 <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="/pagefind/pagefind-ui.js"></script>
 <style>
     .pagefind-ui__results-area.svelte-e9gkc3 {
         background-color: rgb(255, 255, 255) !important;
