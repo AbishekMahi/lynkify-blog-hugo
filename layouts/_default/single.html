@@ -60,7 +60,8 @@
             <div class="postbox__tag-2 mr-10">
               {{ with .Params.categories }}
               {{ range . }}
-              <a href="{{ "/categories/" | relURL }}{{ . | urlize }}"> <i class="fad fa-folder-open fa-lg"></i>  {{ . }} </a>
+              <a href="{{ "/categories/" | relURL }}{{ . | urlize }}"> <i class="fad fa-folder-open fa-lg"></i> {{ . }}
+              </a>
               {{ end }}
               {{ end }}
             </div>
@@ -103,8 +104,8 @@
       <div class="col-xxl-9 col-md-12">
         <div class="postbox__wrapper">
           <div class="postbox__thumb postbox__thumb-2 fix w-img mb-30">
-            <img src="{{ .Params.banner }}" alt="{{ .Title }}" data-pagefind-meta="image[src], image_alt[alt]"
-              loading="lazy">
+            <img src="{{ .Params.banner }}" class="banner-img" alt="{{ .Title }}"
+              data-pagefind-meta="image[src], image_alt[alt]" loading="lazy">
           </div>
           <div class="postbox__details mb-30">
             {{ .Content }}

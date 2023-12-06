@@ -650,7 +650,8 @@ progress {
 @media (min-width:576px) {
 
     .container,
-    .container-sm {
+    .container-sm,
+    .container .banner-img {
         max-width: 540px
     }
 }
@@ -659,7 +660,8 @@ progress {
 
     .container,
     .container-md,
-    .container-sm {
+    .container-sm,
+    .container .banner-img {
         max-width: 720px
     }
 }
@@ -669,7 +671,8 @@ progress {
     .container,
     .container-lg,
     .container-md,
-    .container-sm {
+    .container-sm,
+    .container .banner-img {
         max-width: 960px
     }
 }
@@ -680,7 +683,8 @@ progress {
     .container-lg,
     .container-md,
     .container-sm,
-    .container-xl {
+    .container-xl,
+    .container .banner-img {
         max-width: 1140px
     }
 }
@@ -692,7 +696,8 @@ progress {
     .container-md,
     .container-sm,
     .container-xl,
-    .container-xxl {
+    .container-xxl,
+    .container .banner-img {
         max-width: 1200px
     }
 }
