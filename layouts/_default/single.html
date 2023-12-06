@@ -74,7 +74,7 @@
             <ul class="d-flex align-items-center">
               <li>
                 <div class="postbox__author-thumb-2">
-                  <img loading="lazy" src="{{ .Params.avatar }}" alt="{{ .Params.authors }}">
+                  <img  src="{{ .Params.avatar }}" alt="{{ .Params.authors }}">
                 </div>
               </li>
               {{ with .Params.authors }}
@@ -105,7 +105,7 @@
         <div class="postbox__wrapper">
           <div class="postbox__thumb postbox__thumb-2 fix w-img mb-30">
             <img src="{{ .Params.banner }}" class="banner-img" alt="{{ .Title }}"
-              data-pagefind-meta="image[src], image_alt[alt]" loading="lazy">
+              data-pagefind-meta="image[src], image_alt[alt]" >
           </div>
           <div class="postbox__details mb-30">
             {{ .Content }}
