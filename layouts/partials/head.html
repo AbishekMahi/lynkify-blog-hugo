@@ -22,7 +22,7 @@
 <meta property="og:description"
     content="{{ with .Params.description }}{{ . | safeHTML }}{{ else }}{{ site.Params.description | default "" | safeHTML }}{{ end }}" />
 <meta property="og:image"
-    content="{{ with .Params.banner }}{{ . | safeHTML }}{{ else }}{{ site.Params.banner | default "/img/blog/blog.png" | safeHTML }}{{ end }}" />
+    content="{{ with .Params.banner }}{{ . | safeHTML }}{{ else }}{{ site.Params.banner | default "/img/blog/blog.webp" | safeHTML }}{{ end }}" />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
@@ -32,7 +32,7 @@
 <meta property="twitter:description"
     content="{{ with .Params.description }}{{ . | safeHTML }}{{ else }}{{ site.Params.description | default "" | safeHTML }}{{ end }}" />
 <meta property="twitter:image"
-    content="{{ with .Params.banner }}{{ . | safeHTML }}{{ else }}{{ site.Params.banner | default "/img/blog/blog.png" | safeHTML }}{{ end }}" />
+    content="{{ with .Params.banner }}{{ . | safeHTML }}{{ else }}{{ site.Params.banner | default "/img/blog/blog.webp" | safeHTML }}{{ end }}" />
 
 {{/*  <link rel="stylesheet" href="/css/main.css">
 <link rel="stylesheet" href="/css/index.css">
@@ -138,7 +138,7 @@
         }
       },
       "headline": "{{ .Title }}",
-      "image": "{{ with .Params.banner }}{{ . | safeHTML }}{{ else }}{{ site.Params.banner | default "/img/blog/blog.png" | safeHTML }}{{ end }}",
+      "image": "{{ with .Params.banner }}{{ . | safeHTML }}{{ else }}{{ site.Params.banner | default "/img/blog/blog.webp" | safeHTML }}{{ end }}",
       "datePublished": "{{ $date }}",
       "dateModified": "{{ .Lastmod.Format "2006-01-02" }}"
     }

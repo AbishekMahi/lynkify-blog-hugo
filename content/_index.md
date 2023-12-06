@@ -2,7 +2,7 @@
 title = 'Home'
 date = 2023-01-01T08:00:00-07:00
 draft = false
-banner = '/img/blog/blog.png'
+banner = '/img/blog/blog.webp'
 description = "Explore the Lynkify Blog for valuable insights into smart links, music marketing tips, and strategies. Empower your music journey with our expert guidance."
 +++
 
