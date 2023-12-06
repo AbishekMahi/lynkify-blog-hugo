@@ -1,0 +1,29 @@
+{
+  "name": "lynkify-blog",
+  "version": "1.0.0",
+  "description": "Lynkify Blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbishekMahi/lynkify-blog-hugo.git"
+  },
+  "author": "Abishek Mahi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbishekMahi/lynkify-blog-hugo/issues"
+  },
+  "homepage": "https://github.com/AbishekMahi/lynkify-blog-hugo#readme",
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "postcss": "^8.4.32",
+    "postcss-cli": "^11.0.0",
+    "serve": "^14.2.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1"
+  }
+}

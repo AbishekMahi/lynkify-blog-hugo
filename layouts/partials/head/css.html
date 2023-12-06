@@ -1,4 +1,20 @@
-{{- with resources.Get "css/main.css" }}
+{{/*  {{ $css := resources.Get "bundle.css" | resources.PostCSS }}
+{{ if hugo.IsProduction }}
+{{ $css = $css | minify | fingerprint | resources.PostProcess }}
+{{ end }}
+
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" {{ if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}"
+    {{- end }} /> */}}
+
+{{ $css := resources.Get "bundle.css" | resources.PostCSS }}
+{{ if hugo.IsProduction }}
+{{ $css = $css | minify | fingerprint | resources.PostProcess }}
+{{ end }}
+
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" {{ if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}"
+    {{- end }} />
+
+{{/*  {{- with resources.Get "css/main.css" }}
 {{- if eq hugo.Environment "development" }}
 <link rel="stylesheet" href="{{ .RelPermalink }}">
 {{- else }}
@@ -6,5 +22,4 @@
 <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
 {{- end }}
 {{- end }}
-{{- end }}
-
+{{- end }} */}}

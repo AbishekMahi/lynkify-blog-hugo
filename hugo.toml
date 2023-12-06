@@ -23,6 +23,11 @@ author = "authors"
 category = "categories"
 
 # paginate = 2
+[build]
+writeStats = true
+
+[minify]
+minifyOutput = true
 
 [module]
 [module.hugoVersion]

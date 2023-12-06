@@ -1,0 +1,594 @@
+
+body,
+html {
+    height: 100vh;
+    margin: 0;
+    background-color: black !important;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.footer__subscribe-input input {
+    /* width: 300px !important; */
+    padding: 0 20px !important;
+    padding-right: 55px !important;
+}
+
+.lottie {
+    width: 150px;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+h1 {
+    font-size: 2.1rem !important;
+}
+
+h2 {
+    font-size: 2rem !important;
+}
+
+h3 {
+    font-size: 1.5rem !important;
+}
+
+.center-line {
+    width: 70%;
+    display: none !important;
+}
+
+#body {
+    background-color: #00000000 !important;
+}
+
+.lap-back {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /* opacity: 80%; */
+    position: fixed;
+    object-fit: cover;
+}
+
+.bg-image {
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainbanner {
+    background-image: url("https://abishekmahi.github.io/Lynkify/main.png");
+    /* filter: blur(20px);
+    -webkit-filter: blur(20px); */
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.song-logo {
+    position: fixed;
+    top: 35px;
+    left: 40px;
+    z-index: 3;
+}
+
+#body .song-logo {
+    position: absolute;
+    top: 35px;
+    left: 40px;
+    z-index: 3;
+}
+
+.logo1 {
+    position: sticky !important;
+    display: flex;
+    z-index: 3;
+}
+
+.make {
+    position: fixed;
+    top: 35px;
+    right: 40px !important;
+    z-index: 3;
+    width: 25%;
+    /* width: 30%; */
+}
+
+.logo h2 {
+    color: #fff !important;
+    font-weight: 500 !important;
+}
+
+.logo-img {
+    width: 40px;
+    margin-right: 5px !important;
+}
+
+.hcontainer {
+    padding: 15px !important;
+}
+
+.content {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white !important;
+    height: 100vh;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#modal {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    /* display: flex !important; */
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    z-index: 5;
+    backdrop-filter: blur(10px);
+    background-color: #1a1a1ac8;
+    text-align: center !important;
+}
+
+#modal .modal-content {
+    background-color: #00000000;
+    border: none !important;
+}
+
+.songnav {
+    display: none;
+}
+
+.main-menu .active a {
+    color: #fff !important;
+    text-decoration: dashed !important;
+    font-weight: 600 !important;
+}
+
+.main-menu a:hover,
+.mean-container .mean-nav ul li a:hover,
+.community__person img:hover {
+    transform: scale(1.01);
+}
+
+ol img,
+.blog-card {
+    transition-duration: 300ms;
+}
+
+ol img:hover,
+.blog-card:hover {
+    transform: scale(1.02);
+}
+
+.main-top-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 6px;
+    padding: 8px 30px;
+    backdrop-filter: blur(10px);
+    background-color: #ffffff;
+    height: 44px;
+    line-height: 42px;
+    font-size: 14px;
+    color: #dc3545;
+}
+
+.main-top-btn:hover {
+    color: #dc3545;
+    -webkit-box-shadow: 0px 14px 20px 0px rgba(37, 17, 124, 0.16);
+    -moz-box-shadow: 0px 14px 20px 0px rgba(37, 17, 124, 0.16);
+    box-shadow: 0px 14px 20px 0px rgba(37, 17, 124, 0.16);
+    transform: scale(1.09);
+}
+
+.main-img {
+    width: 75%;
+}
+
+.main-btn,
+.right a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    font-size: 16px;
+    font-weight: 500;
+    border: .1px solid #e7e6ef;
+    border-radius: 6px;
+    padding: 10px 16px;
+    backdrop-filter: blur(10px);
+    background-color: #2f2e3864;
+    margin-bottom: 15px;
+}
+
+.main-btn i {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.main-btn:hover {
+    background: #9c99a474 !important;
+}
+
+.right a:hover {
+    width: 91%;
+    background: #9c99a474 !important;
+}
+
+.icons {
+    width: 25px !important;
+}
+
+.main-btn span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.right {
+    max-height: 70vh;
+    overflow-y: visible;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+.main-footer {
+    position: fixed;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    bottom: .7rem;
+    z-index: 4 !important;
+}
+
+.main-footer hr {
+    margin-top: 0 !important;
+    opacity: 30% !important;
+}
+
+.main-footer p {
+    color: #fff;
+    font-size: medium;
+    text-align: center;
+    margin: 0;
+}
+
+.far,
+.fab {
+    font-size: 22px;
+}
+
+.vid-cont {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.video {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+}
+
+.editRight {
+    max-height: 100vh;
+    margin-left: 280px !important;
+    width: 600px !important;
+    overflow-y: visible;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/*  isrc-result */
+.isrc p {
+    font-size: 1rem;
+}
+
+.result-box {
+    margin: 1.5rem 3rem 3rem;
+}
+
+.isrc-result {
+    backdrop-filter: blur(10px);
+    background-color: #2f2e3864;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0 !important;
+    border-radius: 10px;
+    width: 100%;
+    min-width: 500px !important;
+}
+
+#search-results-container {
+    border-radius: 6px;
+    backdrop-filter: blur(10px);
+    background-color: #2f2e3864;
+    padding: 5px 0;
+}
+
+#search-results-container hr {
+    margin: 0;
+}
+
+.song-btn i {
+    font-size: 20px;
+    color: #fff;
+}
+
+.song-btn img {
+    margin-right: 18px;
+    border-radius: 4px;
+}
+
+.s-txt-data p {
+    text-align: left !important;
+    color: #ffffffde;
+    margin: 0 !important;
+    line-height: 1.5;
+}
+
+.type {
+    text-align: left !important;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1;
+    text-transform: capitalize;
+}
+
+.song-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: .6rem 1rem;
+    margin: 0 !important;
+    width: 100%;
+    background-color: #00000000
+}
+
+.song-btn:hover {
+    background-color: #7a7a7a32;
+}
+
+.isrc-result img {
+    width: 230px !important;
+    border-radius: 5px;
+}
+
+.isrc-result p {
+    font-size: 1rem;
+    text-align: left !important;
+    margin-bottom: 8px;
+}
+
+.isrc-btn {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid #e7e6ef;
+    border-radius: 5px;
+    padding: 7px 12px;
+    background: #3c3b3e74 !important;
+    width: 100%;
+    font-size: 14px;
+}
+
+.isrc-about p,
+.isrc-about h5 {
+    font-size: 1rem !important;
+    text-align: left;
+}
+
+.isrc-about img {
+    min-width: 200px;
+    max-width: 400px;
+    padding: 15px;
+}
+
+.isrc-about hr {
+    color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    #song-info .song-logo {
+        display: none;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-align: center;
+    }
+
+    hr {
+        color: #fff;
+    }
+
+    body,
+    html {
+        height: 100%;
+        margin: 0;
+        background-color: black;
+    }
+
+    #body .song-logo {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0px;
+        z-index: 3;
+        backdrop-filter: blur(10px);
+    }
+
+    #body .song-logo a {
+        padding: .2rem 1rem .2rem;
+    }
+
+    .song-logo h2 {
+        margin: 0 !important;
+    }
+
+    .logo-img {
+        width: 36px;
+        margin-right: 5px !important;
+    }
+
+    .sub-logo {
+        display: none !important;
+    }
+
+    .hcontainer {
+        padding: 0px 16px 0 0 !important;
+    }
+
+    .center-line {
+        width: 70%;
+        display: block !important;
+    }
+
+    .bg-image {
+        height: 100%;
+    }
+
+    .content {
+        background-image: linear-gradient(to bottom, #2f2f2f, #1A1A1A);
+        height: 100%;
+        position: relative;
+    }
+
+    .songnav {
+        display: flex !important;
+    }
+
+    .main-img {
+        width: 90%;
+        margin-top: 1.5rem;
+    }
+
+    .right {
+        max-height: max-content;
+        align-items: center;
+    }
+
+    .main-btn,
+    .right a {
+        width: 100%;
+    }
+
+    .main-btn,
+    .right a:hover {
+        width: 100% !important;
+    }
+
+    .make {
+        display: none !important;
+    }
+
+    .main-footer {
+        position: relative;
+        padding-bottom: 0 !important;
+    }
+
+    .main-footer p {
+        color: #fff;
+        font-size: medium;
+        text-align: center;
+        margin: 0;
+    }
+
+    .far,
+    .fab {
+        font-size: 20px;
+    }
+
+    .vid-cont {
+        margin-bottom: 20px;
+    }
+
+    .video {
+        width: 100%;
+        height: 100%;
+    }
+
+    /*  isrc-result */
+    .result-box {
+        margin: 2rem 1.5rem 5rem
+    }
+
+    .isrc-result {
+        backdrop-filter: blur(10px);
+        background-color: #2f2e3864;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0 !important;
+        border-radius: 10px;
+        width: 100%;
+        min-width: 200px !important;
+    }
+
+    .isrc-result img {
+        padding: 0 !important;
+        width: 240px !important;
+    }
+
+    .isrc-result p {
+        text-align: center !important;
+    }
+
+    .isrc-about img {
+        width: 90%;
+        padding: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 230px) {
+    .result-box {
+        margin: 5rem .8rem;
+    }
+
+    .isrc-result img {
+        padding: 0 !important;
+        width: 220px !important;
+    }
+}
