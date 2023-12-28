@@ -7,7 +7,7 @@ banner = "/img/blog/blog-3.webp"
 categories = ['How To']
 authors = ['Abishek Mahi']
 avatar = "/img/avatar/abishek.jpg"
-description = "Explore Lynkify's UPC Finder – a groundbreaking tool bridging physical and digital music realms. Effortlessly retrieve UPCs, enhance your musical journey, and empower artists and professionals. Unleash the power of music with Lynkify today."
+description = "Explore Lynkify's UPC Finder – a groundbreaking tool bridging physical and digital music realms. Effortlessly retrieve UPCs of you music, enhance your musical journey."
 +++
 
 Dive into a realm where music meets seamless identification. Lynkify introduces its groundbreaking UPC Finder, transcending the boundaries between physical and digital musical landscapes.

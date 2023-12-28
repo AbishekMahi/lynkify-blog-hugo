@@ -7,7 +7,7 @@ banner = '/img/blog/blog-2.webp'
 categories = ['How To']
 authors = ['Abishek Mahi']
 avatar = '/img/avatar/abishek.jpg'
-description = 'This is the description of the blog'
+description = "Discover how to effortlessly find the ISRC of your music with Lynkify. Get easy access to this unique identifier and explore the benefits it offers for tracking and monitoring your music's journey."
 +++
 
 #### Introduction:

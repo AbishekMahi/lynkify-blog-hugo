@@ -7,7 +7,7 @@ banner = "/img/blog/blog-4.webp"
 categories = ['Lynkify']
 authors = ['Abishek Mahi']
 avatar = "/img/avatar/abishek.jpg"
-description = "This is the description of the blog"
+description = "Essential identifiers in the music industry. Here the differences between UPC and ISRC codes and providing insights into their crucial role in the music ecosystem."
 +++
 
 #### UPC vs ISRC: Unraveling the Codes of the Music Industry
@@ -30,13 +30,13 @@ In the intricate realm of music, identification and organization play a pivotal 
 
 To fully grasp the distinction between UPC and ISRC, let's delve into a comparative analysis:
 
-| Feature | UPC | ISRC |
-|---|---|---|
-| Purpose | Identifies physical products | Identifies audio recordings |
-| Format | 12–14 digits barcode | 12-digit alphanumeric code |
-| Application | Physical products (CDs, DVDs, vinyl records) | Audio recordings (digital, physical) |
-| Usage | Retail inventory management, streaming platform identification | Copyright protection, royalty distribution |
-| Permanence | Can be reassigned to different products | Permanent identifier for an audio recording |
+| Feature     | UPC                                                            | ISRC                                        |
+| ----------- | -------------------------------------------------------------- | ------------------------------------------- |
+| Purpose     | Identifies physical products                                   | Identifies audio recordings                 |
+| Format      | 12–14 digits barcode                                           | 12-digit alphanumeric code                  |
+| Application | Physical products (CDs, DVDs, vinyl records)                   | Audio recordings (digital, physical)        |
+| Usage       | Retail inventory management, streaming platform identification | Copyright protection, royalty distribution  |
+| Permanence  | Can be reassigned to different products                        | Permanent identifier for an audio recording |
 
 #### Understanding the Significance of UPC and ISRC
 
