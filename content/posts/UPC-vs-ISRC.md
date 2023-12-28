@@ -7,7 +7,7 @@ banner = "/img/blog/blog-4.webp"
 categories = ['Lynkify']
 authors = ['Abishek Mahi']
 avatar = "/img/avatar/abishek.jpg"
-description = "Essential identifiers in the music industry. Here the differences between UPC and ISRC codes and providing insights into their crucial role in the music ecosystem."
+description = "Essential identifiers in the music industry. Here the differences between UPC and ISRC codes and providing insights into their role in the music ecosystem."
 +++
 
 #### UPC vs ISRC: Unraveling the Codes of the Music Industry

@@ -7,7 +7,7 @@ banner = '/img/blog/blog-1.webp'
 categories = ['How To']
 authors = ['Abishek Mahi']
 avatar = '/img/avatar/abishek.jpg'
-description = 'Learn how to effortlessly create smart links for your music with Lynkify, the ultimate free alternative to Songwhip and Linkfire. Simplify your music sharing.'
+description = 'Learn how to effortlessly create smart links for your music with Lynkify. Simplify your music sharing.'
 +++
 
 Are you an aspiring music artist or content creator looking to elevate your music sharing experience? Smart links are the game-changing solution you've been waiting for! With Lynkify, you can effortlessly create personalized song links that resonate with your audience across various streaming platforms like Spotify, Apple Music, and more.
